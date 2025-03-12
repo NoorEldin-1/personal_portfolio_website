@@ -1,0 +1,22 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@theme {
+  --color-main-gold: #fcd069;
+  --color-main-black: #121212;
+  --color-second-black: #1e1e1f;
+  --color-main-gray: #333333;
+  --color-second-gray: #c1c1c1;
+  --font-main: "Poppins", sans-serif;
+}
+* {
+  @apply font-main select-none;
+}
+::-webkit-scrollbar {
+  @apply w-[4px] h-[4px];
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-main-gold rounded-4xl;
+}
+.has-scrollbar::-webkit-scrollbar-button {
+  @apply w-[110px];
+}
